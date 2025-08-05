@@ -26,5 +26,20 @@ public class Demo{
                 System.out.println("Inner" + j);
             }
         }
+
+        for(int i = 1; i <= 5; i++){
+            if(i == 4){
+                continue;
+            }
+            System.out.println("Hi" + i);
+        }
+        int j = 0;
+        while (j<10) {
+            System.out.println("Hello" + j);
+            j++;
+            if(j == 5){
+                break;
+            }
+        }
     }
 }
