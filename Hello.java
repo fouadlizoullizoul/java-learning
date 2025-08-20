@@ -22,6 +22,8 @@ class inf{
             }
             System.out.println();
         }
+
+        
     }
 } 
     
