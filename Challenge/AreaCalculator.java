@@ -15,4 +15,5 @@ public class AreaCalculator {
         }
         return  x * y;
     }
+    
 }
