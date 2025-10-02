@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Five Oceans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+            50% { background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 60px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #667eea);
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .container::after {
+            content: '🌊';
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 2.5rem;
+            opacity: 0.1;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+        }
+
+        h1 {
+            animation: slideInLeft 0.8s ease-out;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        p {
+            animation: fadeInUp 0.8s ease-out;
+            animation-fill-mode: both;
+            transition: all 0.3s ease;
+        }
+
+        p:hover {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 15px;
+            transform: translateX(10px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+
+        h1:hover {
+            transform: translateX(8px) scale(1.05);
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #5a6fd8, #6a4190);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 30px;
+                margin: 20px 10px;
+            }
+            
+            body {
+                padding: 20px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p style="margin: 0; padding: 25px 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: #555; animation-delay: 0.1s;"></p>
+        <h1 style="font-size: 3rem; color: #2c3e50; margin: 50px 0 25px 0; font-weight: 700; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+            <font style="background: linear-gradient(45deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Five Oceans navigates</font>
+        </h1> 
+        <p style="margin: 0; padding: 25px 0; font-family: 'Poppins', sans-serif; font-size: 1.3rem; color: #555; font-weight: 500; animation-delay: 0.2s;">globally with the vast experience to connect the world through the accuracy & efficiency.</p>
+
+<p style="margin: 0; padding: 25px 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: #555; animation-delay: 0.3s;"></p>
+<h1 style="font-size: 2.8rem; color: #2c3e50; margin: 50px 0 25px 0; font-weight: 700; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+    <font style="background: linear-gradient(45deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">We are</font>
+</h1>
+<p style="margin: 0; padding: 25px 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: #555; animation-delay: 0.4s;">fully licensed to offer a comprehensive range of freight services, including Land freight, Ocean freight and Air freight along with expert custom clearance support.</p>
+
+<h1 style="font-size: 2.8rem; color: #2c3e50; margin: 50px 0 25px 0; font-weight: 700; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+    <font style="background: linear-gradient(45deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Our dedicated</font>
+</h1>
+<p style="margin: 0; padding: 25px 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: #555; animation-delay: 0.5s;">Our dedicated fleet of trucks equipped with advanced tracking system to monitor the movement of goods along the world standards.</p>
+
+<p style="margin: 0; padding: 25px 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: #555; animation-delay: 0.6s;"></p>
+<h1 style="font-size: 2.8rem; color: #2c3e50; margin: 50px 0 25px 0; font-weight: 700; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+    <font style="background: linear-gradient(45deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Our Story</font>
+</h1>
+<p style="margin: 0; padding: 25px 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: #555; animation-delay: 0.7s;">Five Oceans stands as a beacon of excellence in the global marketplace, bringing together decades of experience and unwavering commitment to precision. We navigate the complex waters of international business with confidence, connecting continents and cultures through our dedication to accuracy and quality.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;">Founded on the
+    principles of integrity, innovation, and international expertise, Five Oceans has established itself
+    as a trusted partner for businesses seeking to expand their global reach. Our comprehensive understanding of diverse
+    markets and regulatory environments enables us to provide tailored solutions that drive success.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;">From our
+    headquarters, we orchestrate operations that span across multiple continents, ensuring that every client
+    receives the highest standard of service regardless of their location or industry sector.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"></p>
+<h1
+    style="font-size: 2.5rem; color: #2c3e50; margin: 40px 0 20px 0; font-weight: 600; font-family: 'Arial', sans-serif;">
+    <font style="background-color: rgb(255, 255, 255);" color="#201e5a">Our Mission</font>
+</h1>
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;">To provide
+    exceptional global services that bridge continents, cultures, and markets with unwavering accuracy and
+    reliability. We are committed to delivering innovative solutions that empower our clients to achieve their
+    international business objectives.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"></p>
+<h1
+    style="font-size: 2.5rem; color: #2c3e50; margin: 40px 0 20px 0; font-weight: 600; font-family: 'Arial', sans-serif;">
+    <font style="background-color: rgb(255, 255, 255);" color="#201e5a">Our Vision</font>
+</h1>
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;">To be the
+    world's leading provider of global business solutions, recognized for our precision, integrity, and ability
+    to connect businesses across all five oceans. We envision a future where distance and complexity are no barriers to
+    international success.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"></p>
+<h1
+    style="font-size: 2.5rem; color: #2c3e50; margin: 40px 0 20px 0; font-weight: 600; font-family: 'Arial', sans-serif;">
+    <font style="background-color: rgb(255, 255, 255);" color="#201e5a">Our Impact</font>
+</h1>
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;">With over 15+
+    years of experience, we have successfully served 50+ countries and completed 1000+ projects. Our 24/7
+    global support ensures that our clients receive assistance whenever they need it, regardless of time zones.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"></p>
+<h1
+    style="font-size: 2.5rem; color: #2c3e50; margin: 40px 0 20px 0; font-weight: 600; font-family: 'Arial', sans-serif;">
+    <font style="background-color: rgb(255, 255, 255);" color="#201e5a">Our Core Values</font>
+</h1>
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Accuracy:</strong> We maintain the highest standards of precision in
+    all our operations, ensuring that every
+    detail is meticulously handled.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Integrity:</strong> We conduct business with unwavering honesty and
+    transparency, building trust through
+    consistent ethical practices.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Innovation:</strong> We continuously evolve our methods and
+    technologies to stay ahead of industry trends and
+    client needs.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Global Perspective:</strong> We understand diverse cultures and
+    markets, enabling us to provide truly
+    international solutions.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Excellence:</strong> We strive for perfection in every project,
+    exceeding expectations and delivering
+    exceptional results.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Partnership:</strong> We work closely with our clients as trusted
+    partners, committed to their long-term
+    success.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"></p>
+<h1
+    style="font-size: 2.5rem; color: #2c3e50; margin: 40px 0 20px 0; font-weight: 600; font-family: 'Arial', sans-serif;">
+    <font style="background-color: rgb(255, 255, 255);" color="#201e5a">What We Do</font>
+</h1>
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;">Five Oceans
+    specializes in comprehensive global business solutions that help organizations navigate the complexities
+    of international markets. Our expertise spans across multiple industries and geographic regions, providing clients
+    with the tools and knowledge needed to succeed on a global scale.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Global Navigation:</strong> We guide businesses through the intricate
+    landscape of international markets,
+    providing strategic direction and market intelligence.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Market Analysis:</strong> Our team delivers comprehensive market
+    research and analysis to help clients make
+    informed decisions about global expansion.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"><strong
+        style="color: #667eea; font-weight: 600;">Strategic Consulting:</strong> We provide expert consultation services
+    to help businesses develop and
+    implement successful international strategies.</p>
+
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;"></p>
+<h1
+    style="font-size: 2.5rem; color: #2c3e50; margin: 40px 0 20px 0; font-weight: 600; font-family: 'Arial', sans-serif;">
+    <font style="background-color: rgb(255, 255, 255);" color="#201e5a">Ready to Navigate Global Success?</font>
+</h1>
+<p style="margin: 0; padding: 20px 0; font-family: 'Arial', sans-serif; font-size: 1.1rem; color: #555;">Let Five Oceans
+    be your trusted partner in achieving international business excellence. Contact us today to discover
+    how we can help your organization connect with the world.</p>
