@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinAndMax",
+            "request": "launch",
+            "mainClass": "MinAndMax",
+            "projectName": "java-learning_bb0fed10"
+        },
+        {
+            "type": "java",
+            "name": "SumOfFiveNumbers",
+            "request": "launch",
+            "mainClass": "SumOfFiveNumbers",
+            "projectName": "java-learning_bb0fed10"
+        },
+        {
+            "type": "java",
+            "name": "SumChallenge",
+            "request": "launch",
+            "mainClass": "SumChallenge",
+            "projectName": "java-learning_bb0fed10"
+        },
+        {
+            "type": "java",
             "name": "SystemInfo",
             "request": "launch",
             "mainClass": "SystemInfo",
